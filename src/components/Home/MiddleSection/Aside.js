@@ -3,7 +3,8 @@ import React from 'react';
 class Aside extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state ={isAsideOpen: false};
+		this.state ={isAsideOpen: false, width: 0};
+		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 
 		this.handleClick = this.handleClick.bind(this);
 	}
@@ -12,6 +13,19 @@ class Aside extends React.Component {
 			isAsideOpen: !state.isAsideOpen
 		}));
 	}
+
+	componentDidMount() {
+		this.updateWindowDimensions();
+		window.addEventListener('resize', this.updateWindowDimensions);
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.updateWindowDimensions);
+	}
+
+	updateWindowDimensions() {
+		this.setState({ width: window.innerWidth});
+	}
 	
 	render () {
 		return (
@@ -19,7 +33,7 @@ class Aside extends React.Component {
 				<h2 className="aside-title">
 					Recent Blogs
 				</h2>
-				<ul style={{display:this.state.isAsideOpen ? 'flex' : 'none'}}>
+				<ul style={{display:this.state.isAsideOpen || this.state.width >= 790 ? 'flex' : 'none'}}>
 					<li> Blog One </li>
 					<li> Blog Two </li>
 					<li> Blog Three </li>

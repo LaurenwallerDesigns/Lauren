@@ -1,0 +1,135 @@
+/*Featured*/
+
+.featured-blog{
+  width:50vw;
+  height:50vh;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px #aaa;
+  flex-grow: 2;
+  margin: 5% 10% auto 10%;
+}
+
+.blog-title{
+  padding-left:10px;
+  text-align: left;
+  font-size:32px;
+  background:url(../images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aside-date{
+  position:relative;
+  top:-100px;
+  left:11px;
+  display:inline;
+  float:right;
+  box-shadow:1px 1px 10px  #000;
+  background-color: #333;
+  border: 5px solid #eee;
+  padding:5px;
+  background-clip: content-box;
+}
+
+.date-text{
+  font-weight: bold;
+  font-size:12px;
+  padding:2px;
+  color:#333;
+  background:url(../images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.clipped{
+  margin-bottom: 20px;
+  /*top/left, bottom/left, middle-bottom, INSET(right-left, top-bottom) top/left, top/right, bottom/right, bottom/left, middle/bottom(should be the same as the other bottom/middle), bottom/right, top/left*/
+  clip-path:  polygon(0% 0%, 0% 130%, 1% 100%, 1% 25%, 100% 25%, 100% 30%, 2% 30%, 2% 100%, 100% 100%, 130% -50%);
+} 
+
+.featured-paragraph{
+  padding:30px;
+  background-color: #fff;
+  margin-top: -22px;
+  margin-bottom: -85px;
+  margin-left:10px;
+}
+
+
+
+
+/*Aside Bar*/
+.blog-list-aside{
+  background-color: #333f;
+  width:100%;
+  float:right;
+  margin-top:35px;
+  padding:1px;
+}
+
+.blog-list-aside h2{
+  text-align:center;
+  background:url(../images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog-list-aside ul{
+  display:none;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+
+.blog-list-aside li{
+  color:#fff;
+  padding-right:4%;
+  flex-grow: 1
+}
+
+.blog-list-aside li:hover{
+  background:url(../images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*Float ads*/
+
+
+.float-left,
+.float-right{
+  padding:5px;
+  flex: 1 0 40vw;
+}
+
+.float-right{
+  margin-bottom: 65px;
+}
+/*clip-art for frame work in logo-ads*/
+.section-move{
+  border: 45px solid #333;
+  background-color: #fff;
+  padding:25px;
+  background-clip: content-box;
+}
+
+
+
+.inline-block{
+  display:flex !important;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.logo-div{
+  background-color: #fff;
+}
+
+.title-logo{
+  position:relative;
+  top:55px;
+  text-align:center;
+  background:url(../images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

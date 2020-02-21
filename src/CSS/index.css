@@ -1,0 +1,195 @@
+@font-face {
+  font-family: sunsetBeach;
+  src: url(../fonts/sunset-beach.ttf);
+}
+
+* {
+ box-sizing: border-box;
+}
+
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position:relative;
+  min-height:100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*Background*/
+
+body {
+	background: url(../images/backgroundimg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*General */
+.main-container{
+   display:flex;
+}
+
+/*Nav*/
+
+a{
+  list-style: none;
+}
+
+.top-nav{
+  background-color: #333;
+  width:100%;
+  height:45px;
+  display: flex;
+}
+
+
+span{
+  margin:0 auto;
+  font-size:28px;
+  background:url(../images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.top-nav-ul{
+  flex-direction: column;
+  list-style: none;
+  display:flex;
+  width:100%;
+}
+
+.top-nav-ul .li {
+  color:#fff;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px #000;
+  background-color: #333;
+  z-index:0;
+  text-decoration: none;
+}
+
+
+/*Header*/
+
+.title-header{
+  margin:0 auto;
+  text-align: center;
+  font-size:44px;
+}
+
+
+
+.header-title{
+  font-family: sunsetBeach;
+  text-align:center;
+  font-size: 62px;
+  color:#fff;
+  border: 5px solid #333;
+  margin:10px;
+  padding:5px;
+  background-clip: content-box;
+  text-shadow: 8px 4px 0 rgb(0, 0, 0, 0.5);
+}
+
+/*Title Section*/
+
+.title-section{
+  padding-bottom:4% !important;
+}
+
+
+/*FLEXBOX*/
+
+.flex-box{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+
+
+/*footers*/
+footer{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-content: space-around;
+  align-self: center;
+  background-color: #aaa;
+  width: 100%;
+}
+
+/*Social Media Icons*/
+
+.social-logo{
+  display:flex;
+  flex-direction:row;
+  margin-left:-25px;
+}
+
+.social-logo li{
+  list-style: none;
+  padding-right:2%;
+}
+
+li .icon{
+  max-width:35px;
+  max-height:32px;
+}
+
+/*Middle Footer Section*/
+
+.about-site .title{
+  font-size:30px;
+  font-family:"sunsetbeach";
+    background:url(../images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-site li{
+  list-style: none;
+}
+
+/*Sub Nav Section*/
+.sub-nav-ul{
+  display:flex;
+  flex-direction: column;
+}
+.sub-nav-ul .sub-li{
+  list-style: none;
+  text-align:center;
+  text-decoration: none;
+  color:#fff;
+}
+
+
+.sub-nav-ul .sub-li:hover{
+  background:url(../images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
