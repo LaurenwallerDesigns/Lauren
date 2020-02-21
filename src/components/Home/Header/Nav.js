@@ -3,7 +3,10 @@ import React from 'react';
 class Nav extends React.Component{
 	constructor(props) {
 		super(props);
-		this.state ={isNavOpen: false};
+		this.state ={
+			isNavOpen: false,
+			screenSize: 990
+		};
 
 		this.handleClick = this.handleClick.bind(this);
 	}
@@ -28,6 +31,7 @@ class Nav extends React.Component{
 					<li> MEM crafts </li>
 					<li> About </li>
 					<li> Contact </li>
+					<li><a href="../../public/index-admin.html"> Log In </a></li>
 				</ul>
 			</nav>
 		);

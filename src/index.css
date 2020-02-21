@@ -207,6 +207,20 @@ span{
 
 .blog-list-aside ul{
   display:none;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+
+.blog-list-aside li{
+  color:#fff;
+  padding-right:4%;
+  flex-grow: 1
+}
+
+.blog-list-aside li:hover{
+  background:url(images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*Float ads*/
 
@@ -217,7 +231,9 @@ span{
   flex: 1 0 40vw;
 }
 
-
+.float-right{
+  margin-bottom: 65px;
+}
 /*clip-art for frame work in logo-ads*/
 .section-move{
   border: 45px solid #333;
@@ -259,7 +275,56 @@ footer{
   width: 100%;
 }
 
+/*Social Media Icons*/
 
+.social-logo{
+  display:flex;
+  flex-direction:row;
+  margin-left:-25px;
+}
+
+.social-logo li{
+  list-style: none;
+  padding-right:2%;
+}
+
+li .icon{
+  max-width:35px;
+  max-height:32px;
+}
+
+/*Middle Footer Section*/
+
+.about-site .title{
+  font-size:30px;
+  font-family:"sunsetbeach";
+    background:url(images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-site li{
+  list-style: none;
+}
+
+/*Sub Nav Section*/
+
+.sub-nav-ul li{
+  list-style: none;
+  text-align:center;
+}
+
+.sub-nav-ul .selected{
+  background:url(images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub-nav-ul li:hover{
+  background:url(images/backgroundimg.jpg) no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /*MEDIA QUERIES*/
 
@@ -270,6 +335,13 @@ footer{
   .inline-block{
     flex-direction: row;
   }
+
+  /*nav*/
+
+  .top-nav-ul{
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 
@@ -279,6 +351,14 @@ footer{
   .float-left,
   .float-right{
     padding:3.5%;
+  }
+
+  .top-nav span {
+    display: none;
+  }
+
+  .top-nav-ul{
+    display:flex;
   }
 
   .top-nav-ul{

@@ -1,8 +1,8 @@
 import React from 'react';
-import Featured from './Featured';
-import Aside from './Aside';
-import LogoAds from './LogoAds';
-import Footer from './Footer';
+import Featured from './MiddleSection/Featured';
+import Aside from './MiddleSection/Aside';
+import LogoAds from './LogoAds/LogoAds';
+import Footer from './Footer/Footer';
 
 function FlexBox(props) {
 	return (

@@ -1,5 +1,4 @@
 import React from 'react';
-import ClipPath from './ClipPath';
 
 const Featured = (props) => {
 	return (
@@ -9,11 +8,6 @@ const Featured = (props) => {
 					My Featured Blog
 				</h2>
 			</div>
-			<svg height="0" width="0">
-				<defs>
-					<ClipPath />
-				</defs>
-			</svg>
 				<div className="aside-date">
 					<p className="date-text">January 01, 2020</p>
 				</div>

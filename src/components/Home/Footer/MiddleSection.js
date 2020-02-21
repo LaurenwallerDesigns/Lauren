@@ -4,8 +4,7 @@ function LogoSection(props) {
 	return (
 		<section className="middle-section">
 			<ul className="about-site">
-				<li><img src="..." /></li>
-				<li> this this this this this this. </li>
+				<li className="title">Lauren's Blog</li>
 			</ul>
 		</section>
 	);

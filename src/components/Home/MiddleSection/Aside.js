@@ -12,9 +12,7 @@ class Aside extends React.Component {
 			isAsideOpen: !state.isAsideOpen
 		}));
 	}
-	componentDidMount() {
-		this.
-	}
+	
 	render () {
 		return (
 			<aside className="blog-list-aside" onClick={this.handleClick}>

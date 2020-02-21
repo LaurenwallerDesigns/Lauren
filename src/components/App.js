@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
-import TitleSection from './TitleSection';
-import FlexBox from './FlexBox';
+import TitleSection from './Home/Header/TitleSection.js';
+import FlexBox from './Home/FlexBox';
 
 function App(props) {
   return (
@@ -14,3 +14,4 @@ function App(props) {
 }
 
 export default App;
+

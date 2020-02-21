@@ -1,6 +1,4 @@
 import React from 'react';
-import floatleftimage from '../floatleft.png';
-
 function FloatLeft(props) {
 	return (
 		<div class="float-left">
